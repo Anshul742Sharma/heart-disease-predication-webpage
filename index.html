@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+  
+  
+  
+  
+  
+  
+
+
+  <div class="container">
+    <h1 class="text-center">Heart Disease Prediction</h1>
+    <p class="text-center">Enter patient details below. Recommended ranges are provided as hints.</p>
+    
+    
+    
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="Age">Age</label>
+          
+          <small class="help-text">Recommended range: 30-80 years</small>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="RestingBP">Resting BP</label>
+          
+          <small class="help-text">Recommended range: 90-200 mm Hg</small>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="Cholesterol">Cholesterol</label>
+          
+          <small class="help-text">Recommended range: 100-600 mg/dL</small>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="FastingBS">Fasting BS</label>
+          
+          <small class="help-text">0: False, 1: True</small>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="MaxHR">Max HR</label>
+          
+          <small class="help-text">Recommended range: 60-220 bpm</small>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="Oldpeak">Oldpeak</label>
+          
+          <small class="help-text">Recommended range: 0-10</small>
+        </div>
+      </div>
+      
+      
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="Sex_M">Sex (M=1, F=0)</label>
+          
+        </div>
+        <div class="form-group col-md-3">
+          <label for="ChestPainType_ATA">ChestPainType ATA (1/0)</label>
+          
+        </div>
+        <div class="form-group col-md-3">
+          <label for="ChestPainType_NAP">ChestPainType NAP (1/0)</label>
+          
+        </div>
+        <div class="form-group col-md-3">
+          <label for="ChestPainType_TA">ChestPainType TA (1/0)</label>
+          
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="RestingECG_Normal">RestingECG Normal (1/0)</label>
+          
+        </div>
+        <div class="form-group col-md-3">
+          <label for="RestingECG_ST">RestingECG ST (1/0)</label>
+          
+        </div>
+        <div class="form-group col-md-3">
+          <label for="ExerciseAngina_Y">ExerciseAngina Y (1/0)</label>
+          
+        </div>
+        <div class="form-group col-md-3">
+          <label for="ST_Slope_Flat">ST_Slope Flat (1/0)</label>
+          
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="ST_Slope_Up">ST_Slope Up (1/0)</label>
+          
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="modelSelect">Choose Model</label>
+        
+          <option value="randomforest">Random Forest</option>
+          <option value="svm">SVM</option>
+          <option value="kmeans">K-means</option>
+        
+      </div>
+      
+      Predict
+    
+    
+    <div class="result" style="display: none;">
+      <h3>Prediction Result:</h3>
+      <p></p>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/2025.6.298/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+						if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+							document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+								elm.setAttribute('style', 'display: block; height: 0.5rem;');
+							});
+
+							document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+								const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+								elm.replaceWith(mrow);
+							});
+
+							window.D2L.MathJax.loadMathJax({
+								outputScale: 1.5,
+								renderLatex: false,
+								enableMML3Support: false
+							});
+						}
+					});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2025.6.298/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2025.6.298/unbundled/embeds.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script></body></html>
